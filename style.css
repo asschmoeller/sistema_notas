@@ -1,0 +1,167 @@
+body{
+	background-image: url("escola.png");
+	background-size: cover;
+	background-position: center;
+}
+div.container{
+	width: 100vmax;
+	height: 40vmax;
+}
+div.fundo1{
+	width: 60vmax;
+	height: 30vmax;
+	font-family: Lucida Console;
+	font-size: 18px;
+	text-align: center;
+}
+div.nav{
+	width: 100vmax;
+	height: 6vmax;
+	text-align: center;
+	font-family: Lucida Console;
+	font-size: 25px;
+	vertical-align: middle;
+	display: table-cell;
+}
+div.notas{
+	display: inline-block;
+}
+div.nota1{
+	width: 18vmax;
+	height: 2vmax;
+	background-color: #0AC6F9;
+	display: inline-block;
+	text-align: center;
+	font-family: Lucida Console;
+	font-size: 15px;
+	vertical-align: middle;
+    display: table-cell;
+    border-color: black;
+    border: solid 1px;
+}
+div.nota2{
+	width: 18vmax;
+	height: 2vmax;
+	background-color: #00FF7F;
+	display: inline-block;
+	text-align: center;
+	font-family: Lucida Console;
+	font-size: 15px;
+	vertical-align: middle;
+    display: table-cell;
+    border-color: black;
+    border: solid 1px;
+}
+div.nota3{
+	width: 18vmax;
+	height: 2vmax;
+	background-color: #FF69B4;
+	display: inline-block;
+	text-align: center;
+	font-family: Lucida Console;
+	font-size: 15px;
+	vertical-align: middle;
+    display: table-cell;
+    border-color: black;
+    border: solid 1px;
+}
+div.campo_nota{
+	width: 20vmax;
+	height: 2vmax;
+	background-color: white;
+	display: inline-block;
+	text-align: center;
+	font-family: Lucida Console;
+	font-size: 15px;
+	vertical-align: middle;
+    display: table-cell;
+
+}
+div.frequencia_1{
+	width: 25vmax;
+	height: 2vmax;
+	background-color: white;
+	display: inline-block;
+	text-align: center;
+	font-family: Lucida Console;
+	font-size: 15px;
+	vertical-align: middle;
+    display: table-cell;
+	background-color: #E7CBFC;
+	border-color: black;
+    border: solid 1px;
+}
+div.frequencia_2{
+	width: 25vmax;
+	height: 1vmax;
+	background-color: white;
+	display: inline-block;
+	text-align: center;
+	font-family: Lucida Console;
+	font-size: 15px;
+	vertical-align: middle;
+    display: table-cell;
+}
+div.separa_1{
+	width: 10vmax;
+	height: 2vmax;
+	background-color: white;
+	display: inline-block;
+	text-align: center;
+	font-family: Lucida Console;
+	font-size: 15px;
+	vertical-align: middle;
+    display: table-cell;
+}
+div.separa_2{
+	width: 2vmax;
+	height: 2vmax;
+	background-color: white;
+	display: inline-block;
+	text-align: center;
+	font-family: Lucida Console;
+	font-size: 15px;
+	vertical-align: middle;
+    display: table-cell;
+}
+input[type=button]{
+	background-color: #737BFF;
+	color: black;
+	border-style: outset;
+	border-color: #737BFF;
+	height: 50px;
+	width: 100px;
+	font: Helvetica, sans-serif;
+	text-shadow:none;
+	font-size: 14px;
+}
+div.resultado_1{
+	width: 25vmax;
+	height: 2vmax;
+	background-color: white;
+	display: inline-block;
+	text-align: center;
+	font-family: Lucida Console;
+	font-size: 15px;
+	vertical-align: middle;
+    display: table-cell;
+	background-color: #FA9D89;
+	border-color: black;
+    border: solid 1px;
+}
+footer{
+	width: 98vmax;
+	height: 3vmax;
+	position: absolute;
+	margin-top: 12vmax;
+	font-family: Lucida Console;
+	font-size: 12px;
+	text-align: center;
+
+}
+input{
+	text-align: center;
+}
+div.final{
+	color: #544FC1;
+}

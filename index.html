@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<link href="style.css" rel="stylesheet">
+<title>Sistema de Notas</title>
+    <script type="text/javascript"> function calculo() {
+            res.value = (((parseInt(n1.value) + parseInt(n2.value) + parseInt(n3.value)) / 3) + ((parseInt(n4.value) + parseInt(n5.value) + parseInt(n6.value)) / 3))/2
+            res2.value = 100 - ((parseInt(qf.value) * 100) / parseInt(q.value))
+                if ((res.value >= 7 ) && (res2.value >= 75)){
+                $situacao.value = "Aluno aprovado!";
+				document.getElementById('escondido').style.visibility = 'hidden';
+                } else if (res2.value <= 75) {
+                $situacao.value = "Aluno Reprovado!";
+				document.getElementById('escondido').style.visibility = 'hidden';
+                } else {
+                $situacao.value = "Aluno em exame";
+				document.getElementById('escondido').style.visibility = 'visible';
+            	}              
+            	}
+            function exames(){
+            exame1.value = (((parseInt(res.value) + parseInt(exame.value))/2))
+                if (exame1.value > 5) {
+                $situacao2.value = "Aluno Aprovado!";
+                } else {
+                $situacao2.value = "Aluno Reprovado!"
+                }
+                }
+			function iniciar(){
+					document.getElementById('escondido').style.visibility = 'hidden';
+				}
+    </script>
+</head>
+<body onload="iniciar()">
+		<div class=nav>
+		Sistema de Notas
+		</div>
+	<div class=container>
+		<div class=fundo1>
+		Bimestre 1
+			<div class=notas>			
+				<div class=nota1>
+				Nota 1:
+				</div>
+				<div class=separa_2>
+				</div>
+				<div class=nota2>
+				Nota 2:
+				</div>
+				<div class=separa_2>
+				</div>
+				<div class=nota3>
+				Nota 3:			
+				</div>
+			</div>	
+			<div class=notas>
+				<div class=campo_nota>
+				<input type="text" id="n1" value="0">
+				</div>
+				<div class=separa_2>
+				</div>
+				<div class=campo_nota>
+				<input type="text" id="n2" value="0">
+				</div>
+				<div class=separa_2>
+				</div>
+				<div class=campo_nota>
+				<input type="text" id="n3" value="0">	
+				</div>
+				<br>
+			</div>
+		Bimestre 2
+			<div class=notas>			
+				<div class=nota1>
+				Nota 1:
+				</div>
+				<div class=separa_2>
+				</div>
+				<div class=nota2>
+				Nota 2:
+				</div>
+				<div class=separa_2>
+				</div>
+				<div class=nota3>
+				Nota 3:			
+				</div>
+			</div>	
+			<div class=notas>
+				<div class=campo_nota>
+				<input type="text" id="n4" value="0">
+				</div>
+				<div class=campo_nota>
+				<input type="text" id="n5" value="0">
+				</div>
+				<div class=campo_nota>
+				<input type="text" id="n6" value="0">	
+				</div>
+			</div>
+			<br><br>
+			Frequência
+			<div class=notas>
+				<div class=frequencia_1>
+				Quantidade de faltas: 
+				</div>
+				<div class=separa_1>
+				</div>
+				<div class=frequencia_1>
+				A quantidade total de aulas da disciplina:
+				</div>
+			</div>
+			<div class=notas>
+				<div class=frequencia_2>
+				<input type="text" id="qf" value="0"><br> <br>
+				</div>
+				<div class=separa_1>
+				</div>
+				<div class=frequencia_2>
+				<input type="text" id="q" value="0"><br> <br>
+				</div>
+			</div>		
+			<input type="button" value="Calcular" onclick="calculo()"><br> <br>
+			<div class=notas>
+				<div class=resultado_1>
+				Média do Aluno: 
+				</div>
+				<div class=separa_1>
+				</div>
+				<div class=resultado_1>
+				Frequência de Participação:
+				</div>
+			</div>
+			<div class=notas>
+				<div class=frequencia_2>
+				<input type="text" id="res" value="0"><br><br>
+				</div>
+				<div class=separa_1>
+				</div>
+				<div class=frequencia_2>
+				<input type="text" id="res2" value="0"> <br> <br>
+				</div>
+			Situação:<br>
+				<input type="text" id="$situacao" value=""><br> <br>
+			<div id=escondido>
+			Nota do exame: <input type="text" id="exame" value="0"><br> <br>
+    			<input type="text" id="exame1" value="Resultado Exame 1:"> <br> <br> <br>
+    			<input type="button" value="Calcular" onclick="exames()"><br> <br><br>
+    			<div class=final>
+    		<b> Situação Final: </b> <input type="text" id="$situacao2" value="">
+    			</div>
+    		</div>
+    		</div>
+		</div>
+	</div>
+<footer>
+Sistema de Notas <br>
+2022
+</footer>
+</body>
+</html>
